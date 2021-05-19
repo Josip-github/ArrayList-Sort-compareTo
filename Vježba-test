@@ -16,12 +16,17 @@ public class SortingArrayList {
 	public static void main(String[] args) {
 		
 		ArrayList<Person> list = new ArrayList<>();
+		
+		SortingArrayList.addElements(3, list);
+		
+		SortingArrayList.getElements(list);
 
 	}
 	
 	public static void addElements(int numberOfPersons, ArrayList<Person> col) {
 		for (int i = 1; i <= numberOfPersons; i++) {
 			Scanner sc = new Scanner(System.in);
+			System.out.println("Please type the name!");
 			String input = sc.next();
 			Person person = new Person(input);
 			col.add(person);
