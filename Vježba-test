@@ -2,6 +2,10 @@ package zaGithub;
 
 import java.util.ArrayList;
 
+class Person {
+	private String firstname;
+}
+
 public class SortingArrayList {
 
 	public static void main(String[] args) {
