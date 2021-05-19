@@ -1,9 +1,8 @@
 package zaGithub;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
-class Person {
+class Person implements Comparable<Person>{
 	private String firstname;
 	
 	public Person(String firstname) {
@@ -14,8 +13,12 @@ class Person {
 	public String toString() {
 		return "Person " + firstname;
 	}
-	
-	
+
+	@Override
+	public int compareTo(Person o) {
+		return firstname.compareTo(o.firstname);
+	}
+
 }
 
 public class SortingArrayList {
@@ -25,6 +28,8 @@ public class SortingArrayList {
 		ArrayList<Person> list = new ArrayList<>();
 		
 		SortingArrayList.addElements(3, list);
+		
+		Collections.sort(list);
 		
 		SortingArrayList.getElements(list);
 
