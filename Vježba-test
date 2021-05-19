@@ -9,6 +9,13 @@ class Person {
 	public Person(String firstname) {
 		this.firstname = firstname;
 	}
+
+	@Override
+	public String toString() {
+		return "Person " + firstname;
+	}
+	
+	
 }
 
 public class SortingArrayList {
