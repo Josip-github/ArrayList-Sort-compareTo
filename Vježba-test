@@ -1,9 +1,14 @@
 package zaGithub;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class Person {
 	private String firstname;
+	
+	public Person(String firstname) {
+		this.firstname = firstname;
+	}
 }
 
 public class SortingArrayList {
@@ -15,6 +20,11 @@ public class SortingArrayList {
 	}
 	
 	public static void addElements(int numberOfPersons, ArrayList<Person> col) {
-		
+		for (int i = 1; i <= numberOfPersons; i++) {
+			Scanner sc = new Scanner(System.in);
+			String input = sc.next();
+			Person person = new Person(input);
+			col.add(person);
+		}
 	}
 }
