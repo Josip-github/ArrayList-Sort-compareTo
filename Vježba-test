@@ -13,5 +13,8 @@ public class SortingArrayList {
 		ArrayList<Person> list = new ArrayList<>();
 
 	}
-
+	
+	public static void addElements(int numberOfPersons, ArrayList<Person> col) {
+		
+	}
 }
